@@ -22,7 +22,7 @@ app.post('/',function(req,res){
     qs: {from_currency: crypto, function: 'CURRENCY_EXCHANGE_RATE', to_currency: fiat},
     headers: {
       'x-rapidapi-host': 'alpha-vantage.p.rapidapi.com',
-      'x-rapidapi-key': 'e24f4ae48dmsh725514a23b86277p1f6da3jsnef70f9f79eae',
+      'x-rapidapi-key': process.env.API_KEY,
       useQueryString: true
     }
   };
