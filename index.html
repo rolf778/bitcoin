@@ -3,25 +3,36 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Curreny Price</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+  </style>
+  <title>Cryptocurreny Price</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="css/pictures/favicon.png">
 </head>
 
 <body>
+  <div>
   <h1>Bitcoin Ticker</h1>
-  <form action="/" method="post">
+  <h2>Choose the cryptocurrency that you want to convert :)</h2>
+  </div>
 
-    <select name='crypto'>
-      <option value='BTC'>Bitcoin</option>
 
-    </select>
+      <div class="form-div1">
+        <form action="/" method="post">
+          <select name='crypto' class="crypto">
+            <option value='BTC'>Bitcoin</option>
+          </select>
+          <select name='fiat' class="fiat">
+            <option value='USD'>USD</option>
+          </select>
+          <button type='submit' name='button' class='button'>Submit</button>
+        </form>
+      </div>
+      <div class="form-div2">
+        <img src="css/pictures/bitcoin.png" class="bitcoin"></img>
+      </div>
 
-    <select name='fiat'>
-      <option value='USD'>USD</option>
-
-    </select>
-
-    <button type='submit' name='button'>Submit</button>
-  </form>
 </body>
 
 </html>
